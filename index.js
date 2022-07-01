@@ -33,7 +33,6 @@ function identicalFilter(a){
         }
         for(let g in i){
             let y = +g+1
-            console.log(y)
             if(i[g] === i[y]){
                 x.push(i[g])
             }
@@ -67,3 +66,24 @@ function century(a){
 }
 
 console.log(century(1756))
+
+
+function equal(a,b,c){
+    let newArray = []
+    let x = a.toString() + b.toString() + c.toString()
+    let y = [...x]
+    let z = y.sort((a,b) => a - b)
+    for(let i in z){
+        let g = +i+1
+        if(z[i] == z[g]){
+            newArray.push(z[i])
+        }
+    }
+    return newArray
+}
+
+console.log(equal(3, 3, 4))
+
+let aa = [2,2,3]
+let y = aa.filter(i => i.value == i.value)
+console.log(y)
