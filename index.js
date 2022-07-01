@@ -9,15 +9,18 @@ function uniqueArr(a){
 console.log(uniqueArr([-5, 1, -7, -5, -2, 3, 3, -5, -1, -1]))
 
 function specialReverse(a,b){
-    // let x = []
     let c = a.split(' ')
-    // for(let i in c){
-    //     if(b.includes(c[i][0])){
-    //         x.push(c[i])
-    //     }
-    // }
-    let x = c.map(item => b.includes(item[0]) ? item + '21': item)
-    return x
+    let x = []
+    for(let i in c){
+        if(b.includes(c[i][0])){
+            x.push(c[i])
+        }
+
+    }
+    let reverseWordArr = 
+        x.map(word => word.split("")
+    .reverse().join(""));
+    return reverseWordArr
 }
 
 console.log(specialReverse("word searches are super fun", "s"))
@@ -101,3 +104,22 @@ function validDivision_2(a){
 }
 
 console.log(validDivision_2('6/4'))
+
+
+function ar(str){
+    let reverseWordArr = 
+        str.map(word => word.split("")
+    .reverse().join(""));
+    return reverseWordArr.join(' ')
+}
+
+console.log(ar(['heelo', 'ewew']))
+
+
+let y = 1 
+let xx = new Map()
+xx.set('one', y)
+console.log(xx.get('one'))
+let yy = new Set()
+yy.add('hello').add('Humoyun')
+console.log(yy)
