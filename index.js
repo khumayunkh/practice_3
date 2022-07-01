@@ -26,14 +26,6 @@ let x = [...'hello']
 console.log(x.reverse().join(''))
 
 function identicalFilter(a){
-    let b = a.filter(item => item[0] === item[1] || item.length === 1)
-    return b
-}
-
-console.log(identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"]))
-
-
-function identicalFilter_2(a){
     let x = []
     for(let i of a){
         if(i.length === 1){
@@ -51,4 +43,12 @@ function identicalFilter_2(a){
     return z
 }
 
-console.log(identicalFilter_2(["aaaaaa", "bc", "d", "eeee", "xyz"]))
+console.log(identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"]))
+
+function add(a){
+    return function(b){
+        return a + b
+    }
+}
+
+console.log(add(10)(20))
