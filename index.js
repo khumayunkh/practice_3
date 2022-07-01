@@ -52,3 +52,10 @@ function add(a){
 }
 
 console.log(add(10)(20))
+
+function marathonDistance(a){
+    let x = a.reduce((a,b) => (a<0 ? a * (-1) : a && b<0 ? b * (-1) : b) && a + b)
+    return x === 25
+}
+
+console.log(marathonDistance([6, 15, 4]))
