@@ -123,3 +123,12 @@ console.log(xx.get('one'))
 let yy = new Set()
 yy.add('hello').add('Humoyun')
 console.log(yy)
+
+function oddishOrEvenish(a){
+    let x = a.toString()
+    let y = [...x]
+    return y.reduce((a,b) => +a + +b) % 2 === 0 
+        ? 'Evenish' : 'Oddish'
+}
+
+console.log(oddishOrEvenish(43))
