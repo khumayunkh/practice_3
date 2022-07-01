@@ -24,3 +24,31 @@ console.log(specialReverse("word searches are super fun", "s"))
 
 let x = [...'hello']
 console.log(x.reverse().join(''))
+
+function identicalFilter(a){
+    let b = a.filter(item => item[0] === item[1] || item.length === 1)
+    return b
+}
+
+console.log(identicalFilter(["aaaaaa", "bc", "d", "eeee", "xyz"]))
+
+
+function identicalFilter_2(a){
+    let x = []
+    for(let i of a){
+        if(i.length === 1){
+            x.push(i)
+        }
+        for(let g in i){
+            let y = +g+1
+            console.log(y)
+            if(i[g] === i[y]){
+                x.push(i[g])
+            }
+        }
+    }
+    let z = x.join('')
+    return z
+}
+
+console.log(identicalFilter_2(["aaaaaa", "bc", "d", "eeee", "xyz"]))
