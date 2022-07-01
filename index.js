@@ -54,8 +54,16 @@ function add(a){
 console.log(add(10)(20))
 
 function marathonDistance(a){
-    let x = a.reduce((a,b) => (a<0 ? a * (-1) : a && b<0 ? b * (-1) : b) && a + b)
+    let x = a.map(item => item<0 ? item * -1 : item).reduce((a,b) => a + b)
     return x === 25
 }
 
-console.log(marathonDistance([6, 15, 4]))
+console.log(marathonDistance([6, 15, -4]))
+
+function century(a){
+    let b = a.toString()
+    let y = b[0] + b[1]
+    return +y + 1 +'th century'
+}
+
+console.log(century(1756))
