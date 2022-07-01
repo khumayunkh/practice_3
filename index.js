@@ -9,13 +9,15 @@ function uniqueArr(a){
 console.log(uniqueArr([-5, 1, -7, -5, -2, 3, 3, -5, -1, -1]))
 
 function specialReverse(a,b){
-    let x = []
+    // let x = []
     let c = a.split(' ')
-    for(let i in c){
-        if(b.includes(c[i][0])){
-            x.push(c[i])
-        }
-    }
+    // for(let i in c){
+    //     if(b.includes(c[i][0])){
+    //         x.push(c[i])
+    //     }
+    // }
+    let x = c.map(item => b.includes(item[0]) ? item + '21': item)
+    return x
 }
 
 console.log(specialReverse("word searches are super fun", "s"))
