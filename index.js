@@ -84,6 +84,20 @@ function equal(a,b,c){
 
 console.log(equal(3, 3, 4))
 
-let aa = [2,2,3]
-let y = aa.filter(i => i.value == i.value)
-console.log(y)
+function validDivision(a){
+    let x = [...a]
+    const obj ={
+        '/' : +x[0] / +x[x.length-1] % 2 === 0
+    }
+    return obj['/']
+}
+
+console.log(validDivision('6/3'))
+
+
+function validDivision_2(a){
+    let x = [...a]
+    return (+x[0] / +x[x.length-1]) % 2===0
+}
+
+console.log(validDivision_2('6/4'))
