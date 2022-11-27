@@ -121,7 +121,7 @@ let xx = new Map()
 xx.set('one', y)
 console.log(xx.get('one'))
 let yy = new Set()
-yy.add('hello').add('Humoyun')
+yy.add('hello').add('Humoyun').add('Hasanov')
 console.log(yy)
 
 function oddishOrEvenish(a){
@@ -131,4 +131,4 @@ function oddishOrEvenish(a){
         ? 'Evenish' : 'Oddish'
 }
 
-console.log(oddishOrEvenish(43))
+console.log(oddishOrEvenish(40))
