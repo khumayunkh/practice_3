@@ -132,3 +132,13 @@ function oddishOrEvenish(a){
 }
 
 console.log(oddishOrEvenish(40))
+
+
+function aR(str){
+    let reverseWordArr = 
+        str.map(word => word.split("")
+    .reverse().join(""));
+    return reverseWordArr.join(' ')
+}
+
+console.log(aR(['heelo', 'ewew']))
