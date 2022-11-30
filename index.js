@@ -103,7 +103,7 @@ function validDivision_2(a){
     return (+x[0] / +x[x.length-1]) % 2===0
 }
 
-console.log(validDivision_2('6/4'))
+console.log('saAsas', validDivision_2('4/2'))
 
 
 function ar(str){
