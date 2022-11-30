@@ -142,3 +142,12 @@ function aR(str){
 }
 
 console.log(aR(['heelo', 'ewew']))
+
+
+let y1 = 1 
+let xx1 = new Map()
+xx.set('one', y1)
+console.log(xx.get('one'))
+let yy1 = new Set()
+yy1.add('hello').add('Humoyun').add('Hasanov')
+console.log(yy1)
