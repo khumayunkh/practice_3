@@ -151,3 +151,11 @@ console.log(xx.get('one'))
 let yy1 = new Set()
 yy1.add('hello').add('Humoyun').add('Hasanov')
 console.log(yy1)
+
+
+function validDivision_3(a){
+    let x = [...a]
+    return (+x[0] / +x[x.length-1]) % 2===0
+}
+
+console.log('saAsas', validDivision_3('4/2'))
