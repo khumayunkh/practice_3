@@ -159,3 +159,23 @@ function validDivision_3(a){
 }
 
 console.log('saAsas', validDivision_3('4/2'))
+
+
+
+
+function specialReverse2(a,b){
+    let c = a.split(' ')
+    let x = []
+    for(let i in c){
+        if(b.includes(c[i][0])){
+            x.push(c[i])
+        }
+
+    }
+    let reverseWordArr = 
+        x.map(word => word.split("")
+    .reverse().join(""));
+    return reverseWordArr
+}
+
+console.log(specialReverse2("word searches are super fun", "s"))
