@@ -179,3 +179,13 @@ function specialReverse2(a,b){
 }
 
 console.log(specialReverse2("word searches are super fun", "s"))
+
+
+
+function centure(a){
+    let b = a.toString()
+    let y = b[0] + b[1]
+    return +y + 1 +'th century'
+}
+
+console.log(centure(3756))
